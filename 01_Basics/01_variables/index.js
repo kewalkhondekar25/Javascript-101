@@ -1,10 +1,10 @@
-//declaration
+//declaration - defines scope & name
 var name;
 
-//assignment
+//assignment - declaring a value after declaration
 name = "john";
 
-//initialization
+//initialization - rendering a value while declaring
 var firstName = "david"
 
 document.write("Hello! " + firstName);
