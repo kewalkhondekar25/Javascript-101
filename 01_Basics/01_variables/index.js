@@ -1,2 +1,10 @@
-var name = prompt("Enter your name");
-document.write("Hello! " + name);
+//declaration
+var name;
+
+//assignment
+name = "john";
+
+//initialization
+var firstName = "david"
+
+document.write("Hello! " + firstName);
