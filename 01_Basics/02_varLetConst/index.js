@@ -10,8 +10,8 @@ function f1(){
 
   document.write("x= " + x + " " + "y= " + y + "<br>");
 };
-
 f1();
+
 
 //let - block scope variable
 function f2(){
@@ -20,10 +20,17 @@ function f2(){
 
   if(a == 10){
     let b = 20; //block scope
-    document.write("inside block scope: " + "a= " + a + " " + "b= " + b);  // a & b are accessible here
+    document.write("inside block scope: " + "a= " + a + " " + "b= " + b + "<br>");  // a & b are accessible here
   };
 
-  document.write("a= " + a + "<br>" + "b= " + b); //b is only accessible inside block
+  // document.write("a= " + a + "<br>" + "b= " + b); //b is only accessible inside block
 };
-
 f2();
+
+//const
+function f3(){
+  //const - block scope, init mandatory
+  const fullName = "john doe";
+  document.write("fullName: " + fullName);
+};
+f3();
