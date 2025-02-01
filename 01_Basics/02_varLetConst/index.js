@@ -3,7 +3,7 @@ var globalValue = 69;
 
 function f1(){
   
-  window.globalValue2 = 69;
+  window.globalValue2 = 69; //to make functional scobe variable global scope
   
   //var - function scope
 
