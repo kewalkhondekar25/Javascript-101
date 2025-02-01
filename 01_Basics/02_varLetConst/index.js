@@ -1,5 +1,12 @@
+//global scope
+var globalValue = 69;
+
 function f1(){
+  
+  window.globalValue2 = 69;
+  
   //var - function scope
+
   var x;
   x = 10;
 
@@ -9,6 +16,7 @@ function f1(){
   };
 
   document.write("x= " + x + " " + "y= " + y + "<br>");
+  document.write(globalValue);
 };
 f1();
 
@@ -31,6 +39,8 @@ f2();
 function f3(){
   //const - block scope, init mandatory
   const fullName = "john doe";
-  document.write("fullName: " + fullName);
+  document.write("fullName: " + fullName + "<br>");
+  document.write(globalValue);
+  document.write(globalValue2);
 };
 f3();
