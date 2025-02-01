@@ -11,3 +11,15 @@ function f1(){
 };
 
 f1();
+
+//let - will not allow hoisting 
+function f2(){
+  let z = 10;
+  // let z = 20; -  Cannot redeclare block-scoped variable 'z'
+
+  var x = 10;
+  let x = 10;  //Identifier 'x' has already been declared
+
+  document.write("x in f2: " + x); 
+};
+f2();
