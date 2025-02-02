@@ -20,5 +20,12 @@ function handleLoad(){
     const lst = document.createElement("li");
     lst.innerHTML = url;
     document.querySelector("ol").appendChild(lst);
+
+    const tr = document.createElement("tr");
+    const td = document.createElement("td");
+
+    td.innerHTML = url;
+    tr.appendChild(td);
+    document.querySelector("tbody").appendChild(tr);
   };
 };
