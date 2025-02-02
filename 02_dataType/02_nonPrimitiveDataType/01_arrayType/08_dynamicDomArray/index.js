@@ -12,5 +12,13 @@ function handleLoad(){
     pic.width = "200";
     pic.style.padding = "5px"
     document.getElementById("container").appendChild(pic);
+
+    const opt = document.createElement("option");
+    opt.text = url;
+    document.querySelector("select").appendChild(opt);
+
+    const lst = document.createElement("li");
+    lst.innerHTML = url;
+    document.querySelector("ol").appendChild(lst);
   };
 };
