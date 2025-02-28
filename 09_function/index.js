@@ -63,3 +63,23 @@ const printRest = (...arr) => {
   console.log(...rest);
 };
 printRest(1, 2, 3, 4, 5);
+
+const rest = (ten, twenty, ...rest) => {
+  console.log(ten, twenty);
+  console.log(...rest);
+};
+rest(10, 20, 30, 40, 50);
+
+//callback func
+const printIsEven = (num, cb) => {
+  return cb(num);
+};
+
+const checksEven = (num) => {
+  if(num % 2 === 0){
+    return "true";
+  };
+  return "false"
+};
+
+console.log(printIsEven(2, checksEven));
