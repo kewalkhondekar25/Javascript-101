@@ -22,8 +22,44 @@ printMultiplyBy2(5, multiplyBy2);
 //IIFE
 (() => console.log("hello world"))();
 ((name) => console.log(`greetings! ${name}`))("omen");
-((x) => {
+((x) => {//closure
   return ((y) => {
     console.log(x)
   })()
 })(1);
+
+for(let i = 0; i < 5; i++){  
+  setTimeout(() => {
+    console.log(i);
+  }, i * 1000)
+};//0,1,2,3,4
+
+for(var i = 0; i < 5; i++){
+  setTimeout(() => {
+    console.log(i);
+  }, i * 1000)
+};//5,5,5,5,5
+
+//output ques
+var x = 1;
+const func = () => {
+  console.log("hoisting in func ", x);//undefined
+  var x = 2;
+};
+func();
+
+//spread operator
+const printSpread = (num1, num2, num3) => {
+  console.log(num1 + num2 + num3);
+};
+const arr = [69, 70, 71];
+printSpread(...arr);
+
+//rest operator/parameter
+const printRest = (...arr) => {
+  const [one, two, ...rest] = arr;
+  console.log("one: ", one);
+  console.log("two: ",two);
+  console.log(...rest);
+};
+printRest(1, 2, 3, 4, 5);
