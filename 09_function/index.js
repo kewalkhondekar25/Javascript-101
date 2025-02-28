@@ -22,3 +22,8 @@ printMultiplyBy2(5, multiplyBy2);
 //IIFE
 (() => console.log("hello world"))();
 ((name) => console.log(`greetings! ${name}`))("omen");
+((x) => {
+  return ((y) => {
+    console.log(x)
+  })()
+})(1);
