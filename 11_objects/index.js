@@ -42,5 +42,21 @@ const createUser = (name, score) => {
 const user4 = createUser("charles", 16);
 console.log(user4);
 
+const createNewUser = (name, score) => {
+  const newUser = Object.create(userScoreFn);
+  newUser.name = name;
+  newUser.score = score;
+  return newUser;
+};
+
+const userScoreFn = {
+  increment: function(){
+    return this.score + 1;
+  }
+};
+
+const user5 = createNewUser("lewis", 44);
+console.log(user5.increment());
+
 
 
