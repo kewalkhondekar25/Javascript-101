@@ -56,7 +56,8 @@ const userScoreFn = {
 };
 
 const user5 = createNewUser("lewis", 44);
-console.log(user5.increment());
+console.log(user5.increment());//45
+console.log(user5.hasOwnProperty("score"));
 
 
 
