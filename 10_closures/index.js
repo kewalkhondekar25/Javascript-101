@@ -45,5 +45,5 @@ const createBase = (num1) => {
 };
 
 const addSix = createBase(6);
-console.log(addSix(10));
+console.log(addSix(10));//16
 
